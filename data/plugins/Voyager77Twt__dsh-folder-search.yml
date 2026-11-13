@@ -4,4 +4,4 @@ category: tools
 description:
   en: Search local Word, PDF, PPT, and Excel folders for exam questions and export selected questions to a Word paper.
   zh: 在本地 Word、PDF、PPT、Excel 文件夹中根据关键词和联想在有限范围内检索试题，尽量安全地创建索引库，并把选中的题目导出为 Word 试卷。
-tarball: https://github.com/Voyager77Twt/dsh-folder-search/releases/download/v0.5.41/dsh-folder-search-0.5.41.tgz
+tarball: https://github.com/Voyager77Twt/dsh-folder-search/releases/download/v0.5.42/dsh-folder-search-0.5.42.tgz
