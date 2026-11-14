@@ -872,7 +872,7 @@ dsh plugin --profile web add dshmarket
 - [HEArtattaCK2332/dsh-text-explain](https://github.com/HEArtattaCK2332/dsh-text-explain) — 在 DSH 对话里划词即得大白话解释，浮窗显示，并自动带上这段话所在的那条完整消息作为语境。三档讲解深度（小白 / 通识 / 专业），切换后当场重讲；可选联网搜索与本地文件查找（默认交给模型自己判断，也可一键强制查一次，查完只补充新内容而不复述）；可继续追问；还能把整段问答「待命式」交接给一个新会话——背景放好即止，不唤醒模型、不耗额度。设置保存在宿主侧 settings.json，不点保存不落盘。仓库内另含一个 OpenAI 兼容端点与一个浏览器扩展（源码）。
 - [Heeweelee/dsh-prompt-suggestions](https://github.com/Heeweelee/dsh-prompt-suggestions) — DSH 输入框的输入建议：↑ / ↓ 逐条回滚本会话发过的全部提问（读会话事件日志，采纳预测后发送、排队发送的也算），Ctrl+↑ 打开可搜索的历史面板，灰色幽灵文字预测下一句，→ 采纳。任何按键都只改草稿，不会自动发送。
 - [heiheiha798/dsh-plugin-response-window](https://github.com/heiheiha798/dsh-plugin-response-window) — Web UI 插件：以阶段性文字回复为界分段，把每段的 think 与工具调用收进限高可滚动、高度可配置的 slide 窗口，中间过程始终可见。
-- [heiyedehen/dsh-half-page](https://github.com/heiyedehen/dsh-half-page) — 给智能体用的书房：它通过 reading_* 工具一章一章读 ~/.dsh/reading 里的书，在章节旁写读后感，也把自己写的东西放在这里，面板显示它的阅读进度。插件会往系统提示里加几行，告诉智能体这间书房归它自己、读不读随它。不是待办清单。
+- [heiyedehen/dsh-half-page](https://github.com/heiyedehen/dsh-half-page) — 半页（dsh-half-page）：给智能体用的书房，它通过 reading_* 工具一章一章读 ~/.dsh/reading 里的书，在章节旁写读后感，也把自己写的东西放在这里，面板显示它的阅读进度。插件会往系统提示里加几行，告诉智能体这间书房归它自己、读不读随它。不是待办清单。
 - [heiyedehen/dsh-whale-whispers](https://github.com/heiyedehen/dsh-whale-whispers) — 会话头部的「鲸语」：每个对话一本 markdown 语录，带搜索、翻一句、句数与收藏计数、每条回复旁的一键收入，以及能恢复的回收站。agent 有增、查、删、合并四个工具，系统提示里也带一段记录指引，所以默认每个对话它最多自己记一两句；记什么可按对话或全局设置。全部只存本地。需要 DSH 0.2.1+（0.3 以下）。
 - [hellmage/dsh-chat-lanes](https://github.com/hellmage/dsh-chat-lanes) — 把 DSH 对话窗口切成两列：我说的常驻左栏、可点击跳转，模型的话在右侧流动，并带回车触发的会话内搜索。
 - [hellofuture2068/dsh-simple-view](https://github.com/hellofuture2068/dsh-simple-view) — 简化 DSH 聊天界面：隐藏执行日志、收紧间距与字号、把消息做成气泡，并注入可编辑的“简洁回复”系统指令。
@@ -885,7 +885,7 @@ dsh plugin --profile web add dshmarket
 - [HeShen-1/dsh-composer-enhance](https://github.com/HeShen-1/dsh-composer-enhance) — DSH Web 输入框提示词增强：✨ 按钮先判断歧义、再原地改写草稿；空草稿时以灰色 ghost 给出下一步建议，Tab 或点击填入草稿且不自动发送。
 - [heshuren371/dsh-music-player](https://github.com/heshuren371/dsh-music-player) — 本地音乐播放器：扫描目录中的音频与视频文件，在「音乐」标签页播放，支持交叉淡化、10 段均衡器与响度归一化，并可按歌手-歌名重命名回写标签、封面与文件名（原子替换）。
 - [hffek/dsh-steer-note](https://github.com/hffek/dsh-steer-note) — 在输入框上方增加独立插话栏，支持文字、图片和普通文件，显示读取状态并可在未读取时取消，任务结束时救援未发送草稿。
-- [hg1048596-pixel/dsh-ppt-canvas](https://github.com/hg1048596-pixel/dsh-ppt-canvas) — 元素级 PPT 画布，就地改写已打开的 .pptx：点选、框选或整页选中后用自然语言描述改动，AI 以字节保真的 OOXML 补丁写入，支持撤销与重做。
+- [hg1048596-pixel/dsh-ppt-canvas](https://github.com/hg1048596-pixel/dsh-ppt-canvas) — DeepSeek Harness 的 PPT 工作台：拖入 PPTX，跨页批注对象或区域，在原画布检查 AI 修改，整批确认保存，支持撤销与重做。
 - [hg1048596-pixel/dsh-recall-unread](https://github.com/hg1048596-pixel/dsh-recall-unread) — 在输入框上方列出已发送但模型尚未读取的插话消息，可在模型读取前逐条或一次性撤回。
 - [HighToward/dsh-plugins-sidebar-manager](https://github.com/HighToward/dsh-plugins-sidebar-manager) — 把 DSH 侧栏的面板入口按一级或二级分类归位，为每个分类在侧栏画出可折叠的标题行，并能逐个显示或隐藏；都在设置的「插件侧栏管理」里调整，布局同时写入 $DSH_HOME/plugins-sidebar-manager.json。
 - [hiJoeLee/dsh-suggest-actions](https://github.com/hiJoeLee/dsh-suggest-actions) — 每条回复末尾最多 5 条可点的下一步：点一条直接发出，或填入输入框改完再发。建议由本轮主模型在收尾时给出，不额外调用模型。
@@ -9148,7 +9148,7 @@ dsh plugin --profile web add dshmarket
 - [jiezeng2004-design/dsh-chatgpt-bridge](https://github.com/jiezeng2004-design/dsh-chatgpt-bridge) — 通过 MCP 让 ChatGPT Web 创建、查看、继续和监督 DeepSeek Harness Agent 会话与 Goal，同时保留 DSH 原生的审批、沙箱与工作区安全模型。
 - [Jimmy-Official/dsh-task-notifications](https://github.com/Jimmy-Official/dsh-task-notifications) — DeepSeek Harness 任务结束时弹出系统级通知，正文是本轮最后一条回复；另可开启审批与提问提醒，并支持合成提示音或导入自定义提示音。本插件派生自 ltao0829/dsh-task-notify；与上游插件不能同装——两者占用同一个 task-notify bundle 行。
 - [jiuaiwo/dsh-helper](https://github.com/jiuaiwo/dsh-helper) — 在任意 DSH 会话把本机文件主动投递到微信（复用已装的 IM 插件），另有按 cron 在全新会话里跑的定时任务、工作区活动呼吸灯、标题栏活跃指示、对话完成提示音、关闭 macOS 侧栏毛玻璃与一键重启宿主。
-- [jjjjjjjjnnjnn/ai-terminal-pet#dsh-ai-terminal-pet](https://github.com/jjjjjjjjnnjnn/ai-terminal-pet/tree/main/packages/dsh-ai-terminal-pet) — Windows 上的桌面浮窗：把 OpenCode、Claude Code、Antigravity 和 DeepSeek Harness 的会话状态汇总到一条命名管道，渲染成一个置顶的小面板，一眼看出哪个终端在等你确认，点一下某一行还能跳到对应终端。安装本插件会直接接上 DeepSeek Harness 的会话；OpenCode、Claude Code 和 Antigravity 的会话需要先各自装好仓库里对应的上报端才会出现。对 DeepSeek Harness 会话，面板只显示状态（进行中、等待确认、出错、空闲）并跳到 DSH 窗口，授权仍然在 DSH 里完成。
+- [jjjjjjjjnnjnn/ai-terminal-pet#dsh-ai-terminal-pet](https://github.com/jjjjjjjjnnjnn/ai-terminal-pet/tree/main/packages/dsh-ai-terminal-pet) — Windows 上的置顶浮窗，汇总 DeepSeek Harness、Claude Code、OpenCode 和 Antigravity 的会话状态（进行中、等待确认、出错、完成）到一条命名管道，只在真事件上响铃，点一下跳到对应终端或复制项目路径。装上即接上 Harness 的会话；另外三个终端要先各自装好仓库里的上报端，授权仍在 DSH 里完成。
 - [JMOKSZ/dsh-lark-bridge](https://github.com/JMOKSZ/dsh-lark-bridge) — 飞书入口插件：一条命令安装，流式进度卡片带工具面板、提问/审批按钮卡片、附件处理与 feishu_send 主动推送。
 - [john-walks-slow/dsh-hybrid-notify](https://github.com/john-walks-slow/dsh-hybrid-notify) — DeepSeek Harness 多通道通知插件：前台弹页面内 toast，后台按可用性切换 PWA 系统通知（Service Worker）或浏览器通知兜底；任务完成、审批请求、提问、计划评审、出错等事件可逐项开关，重要通知驻留不消失，并用 Web Audio 实时合成提示音效、零音频文件零网络上报。
 - [john-walks-slow/dsh-im-humanize](https://github.com/john-walks-slow/dsh-im-humanize) — @xmanrui/dsh-im 的拟人化分支（基于上游 4.21.2）：人化消息发送（发送延迟 + 输入中两阶段）、message_break 与 streaming 共存、状态表情、回复引用、per-bot 全量拟人化覆盖、no_reply 回收工具，覆盖微信/飞书/钉钉/企业微信/QQ/Telegram/Slack/WhatsApp 全通道。
